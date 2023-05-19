@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPF_laba12.zadanie3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_laba12"
+        mc:Ignorable="d"
+        Title="Zadanie 3" Height="450" Width="800">
+    <Grid Background="LightPink">
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem x:Name="MI" Header="File" Height="25">
+                <MenuItem Header="Message" Click="Message"/>
+                <MenuItem Header="Check" Click="Check"/>
+                <MenuItem Header="Exit" Click="Exit"/>
+            </MenuItem>
+            <MenuItem Header="Help" Height="25">
+                <MenuItem Header="About" Click="About"/>
+            </MenuItem>
+        </Menu>
+        
+        <ToolBar Height="30" VerticalAlignment="Top" Margin="0,24,0,0">
+            <Separator/>
+            <ToggleButton Content="x2" Height="25" Click="Double"/>
+        </ToolBar>
+        
+        <Button Content="👈Задание 2" Width="100" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="50,0,0,20" Background="LightBlue" Click="GO2"/>
+        
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="Message" Click="Message"/>
+                <MenuItem Header="Check" Click="Check"/>
+                <MenuItem Header="Exit" Click="Exit"/>
+            </ContextMenu>
+        </Grid.ContextMenu>
+    </Grid>
+</Window>
